@@ -7,7 +7,7 @@ body {
 }
 
 section {
-  padding: 13em 0;
+  padding: 5em 0;
 }
 
 /* .before-animation {
@@ -21,11 +21,6 @@ section {
   transform: translateY(0%);
 } */
 
-#contact {
-  padding: 5em 0 13em;
-  text-align: center;
-}
-
 h1 {
   font-size: 4rem;
 }
@@ -34,11 +29,11 @@ p {
   font-size: 1.5rem;
 }
 
-.big-heading {
+/* .big-heading {
   padding-bottom: 1.5em;
-}
+} */
 
-/* Navigation bar */
+/*************************** Navigation bar ***************************/
 
 .space {
   width: 5rem;
@@ -58,26 +53,13 @@ p {
   font-size: 32px;
 }
 
-.resume,
-.email-link {
-  border: 1px solid white;
-  border-radius: 4px;
-}
-
-.resume:hover,
-.email-link:hover {
-  border-color: red;
-  background-color: #470000;
-  color: red;
-}
-
-/* Greetings */
+/*************************** Greetings ***************************/
 
 .container-greatings {
   padding: 10rem 0 0;
 }
 
-/* About */
+/************************** About ***************************/
 
 .text-about {
   width: 55%;
@@ -102,7 +84,14 @@ p {
   text-align: center;
 }
 
-/* Projects */
+/************************** Skills **************************/
+
+.text-skills {
+  width: 55%;
+  margin-right: 3rem;
+}
+
+/************************** Projects **************************/
 
 .row-project {
   padding: 10% 0 0;
@@ -155,13 +144,20 @@ p {
   color: gray;
 }
 
-/* Contact */
+/************************* Contact *************************/
+
+#contact {
+  padding: 5em 0 13em;
+  text-align: center;
+}
 
 .text-email {
   color: rgb(177, 177, 177);
 }
 
 .email-link {
+  border: 1px solid white;
+  border-radius: 4px;
   font-weight: 600;
   padding: 8px;
   margin-top: 2rem;
@@ -169,7 +165,12 @@ p {
   text-decoration: none;
 }
 
-/* footer */
+.email-link:hover {
+  border-color: red;
+  color: red;
+}
+
+/************************** footer **************************/
 
 #footer {
   text-align: center;

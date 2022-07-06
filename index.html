@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <title>Portfolio</title>
 
     <!-- Google Fonts -->
@@ -52,29 +52,31 @@
   <body>
     <!------------------------------------- Nav Bar ------------------------------------->
 
-    <div class="container-fluid">
+    <div class="container">
       <nav
         class="navbar navbar-expand-lg navbar-dark"
         aria-label="Eighth navbar example"
       >
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand top-menu" href=""> ABegov </a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample07"
-            aria-controls="navbarsExample07"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav top-menu ms-auto md-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link top-menu" href="#about">About</a>
+                <a class="nav-link top-menu" aria-current="page" href="#about"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link top-menu" href="#skills">My Skills</a>
@@ -89,7 +91,10 @@
                 <a class="nav-link top-menu" href=""> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link top-menu" href=""
+                <a
+                  class="nav-link top-menu"
+                  href="https://github.com/alimardonbegov"
+                  target="_blank"
                   ><i class="fa-brands fa-github"></i
                 ></a>
               </li>
@@ -109,7 +114,6 @@
         </div>
       </nav>
     </div>
-
     <!---------------------------------- Greetings --------------------------->
 
     <section id="greetings">
@@ -167,20 +171,20 @@
           <h1>MY SKILLS</h1>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="text-skills">
             <p>
-              Here are a few technologies I’ve been studying and working with
+              Here are a few things I’ve been studying and working with
               recently:
             </p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JS</li>
-              <li>jQuery</li>
-              <li>Node.js</li>
-              <li>Git and GitHub</li>
-              <li>EJS</li>
-            </ul>
+            <p>
+              I can make up web pages, adapt them to different screen sizes and
+              devices, set different styles to design and animation. With JS, I
+              can create functionality for user interaction and create simple
+              games. I am also familiar with the jQuery library and can work
+              with it. With Node JS, I can create a server locally and remotely.
+              Using comand line and GIT, I can create projects, commit changes
+              and control versions of the project.
+            </p>
           </div>
           <div class="col">
             <p>
@@ -214,14 +218,14 @@
         <div class="row">
           <div class="text-about">
             <div class="row">
-              <div class="col">
+              <div class="col col-md-6">
                 <img
                   src="images/project1/image1.1.jpg"
                   alt=""
                   class="project-img"
                 />
               </div>
-              <div class="col">
+              <div class="col col-md-6 div-small-img">
                 <img
                   src="images/project1/image1.2.jpg"
                   alt=""
@@ -409,6 +413,5 @@
       </div>
       <p class="text-footer">Designed & Built by Alimardon Begov</p>
     </footer>
-    <!-- <script src="index.js"></script> -->
   </body>
 </html>
