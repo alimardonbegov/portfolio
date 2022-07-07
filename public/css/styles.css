@@ -10,34 +10,44 @@ section {
   padding: 5em 0;
 }
 
-/* .before-animation {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.after-animation {
-  opacity: 1;
-  transition: all 1.5s;
-  transform: translateY(0%);
-} */
+/*************************** Fonts ***************************/
 
 h1 {
-  font-size: 4rem;
+  font-size: 3em;
+  padding-bottom: 0.5em;
 }
 
-p {
-  font-size: 1.5rem;
+p,
+ul {
+  font-size: 1.25em;
 }
 
-/* .big-heading {
-  padding-bottom: 1.5em;
-} */
+@media (max-width: 1199px) and (min-width: 992px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 0.85rem;
+  }
+  .area-for-personal-photo {
+    width: auto;
+  }
+
+  .soft-skills {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 546px) {
+  body {
+    font-size: 0.7rem;
+  }
+}
 
 /*************************** Navigation bar ***************************/
-
-.space {
-  width: 5rem;
-}
 
 .top-menu {
   color: white;
@@ -56,17 +66,17 @@ p {
 /*************************** Greetings ***************************/
 
 .container-greatings {
-  padding: 10rem 0 0;
+  padding: 11em 0 0;
+}
+.container-greatings h1 {
+  padding-bottom: 0;
 }
 
 /************************** About ***************************/
 
-.text-about {
-  width: 55%;
-}
-
 .personal-photo {
-  width: 22em;
+  width: 23em;
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: 0;
@@ -79,17 +89,7 @@ p {
   transition: 0.5s;
 }
 
-.div-photo {
-  display: inline-block;
-  text-align: center;
-}
-
 /************************** Skills **************************/
-
-.text-skills {
-  width: 55%;
-  margin-right: 3rem;
-}
 
 /************************** Projects **************************/
 
@@ -98,7 +98,8 @@ p {
 }
 
 .project-img {
-  width: 15em;
+  width: 100%;
+
   border-radius: 4px;
   transform: rotate(-2deg);
   opacity: 0.5;
@@ -125,13 +126,13 @@ p {
 .project-tech-list {
   display: flex;
   list-style: none;
-  font-size: 1rem;
+  font-size: 0.8em;
   color: gray;
   padding: 3% 0 0;
 }
 
 .project-tech-list li {
-  padding-right: 1rem;
+  padding-right: 1em;
 }
 
 .project-link:hover {
@@ -160,9 +161,11 @@ p {
   border-radius: 4px;
   font-weight: 600;
   padding: 8px;
-  margin-top: 2rem;
+  margin-top: 2em;
   color: white;
   text-decoration: none;
+
+  font-size: 1.5em;
 }
 
 .email-link:hover {
