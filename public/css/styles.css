@@ -74,6 +74,15 @@ ul {
 
 /************************** About ***************************/
 
+.big4 {
+  color: rgb(177, 177, 177);
+  text-decoration: none;
+}
+
+.big4:hover {
+  color: red;
+}
+
 .personal-photo {
   width: 23em;
   max-width: 100%;
@@ -90,6 +99,10 @@ ul {
 }
 
 /************************** Skills **************************/
+
+.future-plan {
+  color: gray;
+}
 
 /************************** Projects **************************/
 
@@ -178,6 +191,7 @@ ul {
 #footer {
   text-align: center;
   color: rgb(177, 177, 177);
+  transition: 3s;
 }
 
 .text-footer {
@@ -185,15 +199,16 @@ ul {
   margin: 0.8%;
 }
 
-.icon-footer i {
+.btn-social {
   padding: 0 0.5rem;
+  text-decoration: none;
+  color: rgb(177, 177, 177);
 }
-
-.icon-footer-move {
+.icon-move {
   transition: 0.3s;
 }
 
-.icon-footer-move:hover {
+.icon-move:hover {
   transform: translate(0, -10px);
   transition: 0.3s;
 }
