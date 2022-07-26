@@ -63,7 +63,6 @@ ul {
   font-size: 32px;
 }
 .code-wars {
-  
   margin-left: auto;
   padding: 0;
 }
@@ -98,10 +97,10 @@ ul {
   transition: 0.5s;
 }
 
-.personal-photo:hover {
+/* .personal-photo:hover {
   filter: none;
   transition: 0.5s;
-}
+} */
 
 /************************** Skills **************************/
 
